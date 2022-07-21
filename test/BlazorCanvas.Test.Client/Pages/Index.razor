@@ -1,0 +1,13 @@
+@page "/"
+
+@using Blazor.Extensions.Canvas.Canvas2D
+
+<h1>Canvas demo!!!</h1>
+
+<a href="/webgl">View WebGL page</a><br>
+
+Welcome to your new app.
+
+<BECanvas Width="300"
+          Height="400"
+          @ref="@this.canvas"></BECanvas>

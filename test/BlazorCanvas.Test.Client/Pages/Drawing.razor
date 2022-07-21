@@ -1,0 +1,12 @@
+@page "/drawing"
+
+<h1>
+    Drawing
+</h1>
+
+<BECanvas Width="256"
+          Height="256"
+          CssClass="border border-3 border-primary mb-3 mb-3"
+          OnMouseMove="this.DrawAsync"
+          OnMouseOver="this.SetPosition"
+          @ref="this.canvas"/>
